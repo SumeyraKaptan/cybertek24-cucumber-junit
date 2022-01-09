@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: Searching Lyft fare details
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 27.533 s <<< FAILURE! - in Searching Lyft fare details
+Searching Lyft fare details.Fare estimate using City #1  Time elapsed: 7.855 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User should see estimated prices" is undefined. You can implement it using the snippet(s) below:
+
+@Then("User should see estimated prices")
+public void user_should_see_estimated_prices() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Searching Lyft fare details.Fare estimate using City #2  Time elapsed: 12.096 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User should see estimated prices" is undefined. You can implement it using the snippet(s) below:
+
+@Then("User should see estimated prices")
+public void user_should_see_estimated_prices() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

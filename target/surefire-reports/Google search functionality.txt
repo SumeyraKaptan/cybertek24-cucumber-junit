@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: Google search functionality
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.842 s <<< FAILURE! - in Google search functionality
+Google search functionality.User search title verification  Time elapsed: 4.842 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for apple")
+public void user_searches_for_apple() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see apple in the title")
+public void user_should_see_apple_in_the_title() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

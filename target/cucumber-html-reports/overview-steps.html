@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>05 Jan 2022, 14:21</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CalculatorStepDefs.result_should_be_displayed(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="298500000">0.298</td>
+              <td class="duration" data-value="298500000">0.651</td>
+              <td class="duration" data-value="1194000000">1.194</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CalculatorStepDefs.user_clicks_on_on_calculator(java.lang.String)</td>
+              <td>12</td>
+              <td class="duration" data-value="196666666">0.196</td>
+              <td class="duration" data-value="196666666">0.417</td>
+              <td class="duration" data-value="2360000000">2.360</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CalculatorStepDefs.user_is_on_calculator_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="4584250000">4.584</td>
+              <td class="duration" data-value="4584250000">5.581</td>
+              <td class="duration" data-value="18337000000">18.337</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_clicks_on_create_button()</td>
+              <td>6</td>
+              <td class="duration" data-value="103833333">0.103</td>
+              <td class="duration" data-value="103833333">0.245</td>
+              <td class="duration" data-value="623000000">0.623</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_clicks_on_new_button()</td>
+              <td>6</td>
+              <td class="duration" data-value="127666666">0.127</td>
+              <td class="duration" data-value="127666666">0.217</td>
+              <td class="duration" data-value="766000000">0.766</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_enters_to_firstname_field(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="168833333">0.168</td>
+              <td class="duration" data-value="168833333">0.425</td>
+              <td class="duration" data-value="1013000000">1.013</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_enters_to_lastname_field(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="89166666">0.089</td>
+              <td class="duration" data-value="89166666">0.125</td>
+              <td class="duration" data-value="535000000">0.535</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_enters_to_position_field(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="180500000">0.180</td>
+              <td class="duration" data-value="180500000">0.386</td>
+              <td class="duration" data-value="1083000000">1.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_enters_to_salary_field(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="124000000">0.124</td>
+              <td class="duration" data-value="124000000">0.181</td>
+              <td class="duration" data-value="744000000">0.744</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.CloudTablesStepDefs.user_is_on_cloudtables_homepage()</td>
+              <td>6</td>
+              <td class="duration" data-value="4746333333">4.746</td>
+              <td class="duration" data-value="4746333333">8.177</td>
+              <td class="duration" data-value="28478000000">28.478</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.DiceJobSearchStepDefs.user_enters_keyword_and_zipcode()</td>
+              <td>1</td>
+              <td class="duration" data-value="436000000">0.436</td>
+              <td class="duration" data-value="436000000">0.436</td>
+              <td class="duration" data-value="436000000">0.436</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.DiceJobSearchStepDefs.user_is_on_dice_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="11355000000">11.355</td>
+              <td class="duration" data-value="11355000000">11.355</td>
+              <td class="duration" data-value="11355000000">11.355</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.DiceJobSearchStepDefs.user_should_see_search_results()</td>
+              <td>1</td>
+              <td class="duration" data-value="3717000000">3.717</td>
+              <td class="duration" data-value="3717000000">3.717</td>
+              <td class="duration" data-value="3717000000">3.717</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.EtsySearchStepsDefs.allCategoriesShouldBeDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="135000000">0.135</td>
+              <td class="duration" data-value="135000000">0.135</td>
+              <td class="duration" data-value="135000000">0.135</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.EtsySearchStepsDefs.page_title_should_be_as_expected()</td>
+              <td>2</td>
+              <td class="duration" data-value="12000000">0.012</td>
+              <td class="duration" data-value="12000000">0.019</td>
+              <td class="duration" data-value="24000000">0.024</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.EtsySearchStepsDefs.page_title_should_start_with_wooden_spoon()</td>
+              <td>1</td>
+              <td class="duration" data-value="8000000">0.008</td>
+              <td class="duration" data-value="8000000">0.008</td>
+              <td class="duration" data-value="8000000">0.008</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.EtsySearchStepsDefs.userSearchesForEmptyValue()</td>
+              <td>1</td>
+              <td class="duration" data-value="4324000000">4.324</td>
+              <td class="duration" data-value="4324000000">4.324</td>
+              <td class="duration" data-value="4324000000">4.324</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.EtsySearchStepsDefs.user_is_on_etsy_homepage()</td>
+              <td>2</td>
+              <td class="duration" data-value="5205500000">5.205</td>
+              <td class="duration" data-value="5205500000">6.118</td>
+              <td class="duration" data-value="10411000000">10.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.EtsySearchStepsDefs.user_searches_for_wooden_spoon()</td>
+              <td>1</td>
+              <td class="duration" data-value="3742000000">3.742</td>
+              <td class="duration" data-value="3742000000">3.742</td>
+              <td class="duration" data-value="3742000000">3.742</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.Hooks.setUpScenario()</td>
+              <td>29</td>
+              <td class="duration" data-value="482758">0.000</td>
+              <td class="duration" data-value="482758">0.004</td>
+              <td class="duration" data-value="14000000">0.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)</td>
+              <td>29</td>
+              <td class="duration" data-value="923586206">0.923</td>
+              <td class="duration" data-value="923586206">1.491</td>
+              <td class="duration" data-value="26784000000">26.784</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.LyftFareEstimateStepDefs.user_clicks_on_get_estimate_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="249666666">0.249</td>
+              <td class="duration" data-value="249666666">0.297</td>
+              <td class="duration" data-value="749000000">0.749</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.LyftFareEstimateStepDefs.user_enters_to_drop_address(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="464000000">0.464</td>
+              <td class="duration" data-value="464000000">0.951</td>
+              <td class="duration" data-value="1392000000">1.392</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.LyftFareEstimateStepDefs.user_enters_to_pickup_address(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="744000000">0.744</td>
+              <td class="duration" data-value="744000000">1.543</td>
+              <td class="duration" data-value="2232000000">2.232</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.LyftFareEstimateStepDefs.user_is_on_lyft_fare_estimate_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="5009000000">5.009</td>
+              <td class="duration" data-value="5009000000">5.983</td>
+              <td class="duration" data-value="15027000000">15.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.LyftFareEstimateStepDefs.user_should_see_estimated_prices()</td>
+              <td>1</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.result_should_be_as_expected()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.result_should_be_division_result()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.result_should_be_multiplication_result()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.result_should_be_sum_of_three_numbers()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.user_adds_three_numbers()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.user_adds_two_numbers()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.user_divides_two_numbers()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cybertek.step_definitions.ReRunDemoStepDefs.user_multiplies_two_numbers()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>34</td>
+            <td>152</td>
+            <td class="duration">0.891</td>
+            <td class="duration">28.478</td>
+            <td class="duration">2:15.540</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

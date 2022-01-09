@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: Passing multiple parameters to the step
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7 s <<< FAILURE! - in Passing multiple parameters to the step
+Passing multiple parameters to the step.  Time elapsed: 7 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Then("User should be able to search for following:")
+public void user_should_be_able_to_search_for_following(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+

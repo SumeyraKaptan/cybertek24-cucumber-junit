@@ -1,0 +1,179 @@
+-------------------------------------------------------------------------------
+Test set: Data driven testing using Scenario outline with Examples table
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 37.386 s <<< FAILURE! - in Data driven testing using Scenario outline with Examples table
+Data driven testing using Scenario outline with Examples table.Google capital cities search #1  Time elapsed: 3.94 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Data driven testing using Scenario outline with Examples table.Google capital cities search #2  Time elapsed: 5.224 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Data driven testing using Scenario outline with Examples table.Google capital cities search #3  Time elapsed: 3.755 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Data driven testing using Scenario outline with Examples table.Google capital cities search #4  Time elapsed: 3.402 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Data driven testing using Scenario outline with Examples table.Google capital cities search #5  Time elapsed: 8.236 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Data driven testing using Scenario outline with Examples table.Google capital cities search #6  Time elapsed: 9.087 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Data driven testing using Scenario outline with Examples table.Google capital cities search #7  Time elapsed: 3.739 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "User is on Google home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("User is on Google home page")
+public void user_is_on_google_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User searches for {string} capital")
+public void user_searches_for_capital(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see {string} in the result")
+public void user_should_see_in_the_result(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
